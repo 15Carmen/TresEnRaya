@@ -1,12 +1,16 @@
 
 package TresEnRaya;
-//El juego hará lo siguinete para lo que creará los métodos convenientes
-//Creará un clase tablero que estara formado por una matrix de 2x2 y el turno que inicia
+//El juego hará lo siguinete para lo que creará los métodos convenientes.
+
+//Creará un clase tablero que estara formado por una matriz de 3x3 y el turno que inicia.
 //cada celda de la matriz valdrá O,X o vacío. el jugador 1 rellenarán con 0 y el jugador 2 con X
+
 //en cada tirada se comprobará si existe alguna fila, o columna o la diagonal con el mismo contenido
-//en caso afirmativo se acabará el juego y se proclamará al vencedor. Si no hya vencedor se comprobará si el tablero
-//ya está lleno por que también se acabaría el juego sin declarar vencedor "tablas"
+//en caso afirmativo se acabará el juego y se proclamará al vencedor. Si no hya vencedor se comprobará
+// si el tablero ya está lleno por que también se acabaría el juego sin declarar vencedor "tablas"
+
 //se creará un menú para indicar si se quiere seguir jugando o desea parar
+
 //cada vez que un jugador juegue, se mostrará el estado del tablero
 
 
@@ -51,8 +55,13 @@ public class Jugar {
         System.out.println("Indique si quiere jugar al tres en raya: Sí/No");
         try {
             teclado=Character.toLowerCase(sc.nextLine().charAt(0));
-            if (teclado=='s')// --> por aqui me he quedado
+            if (teclado=='s'){
+               jugar=true;
+            }
         }
         catch (Exception e){
     }
+        return jugar;
     }
+}
+
